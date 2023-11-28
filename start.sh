@@ -15,7 +15,7 @@ else
     echo "$SCRIPT_FILE already exists. No need to download."
 fi
 
-JOB="$CRON_FREQ $PWD/$SCRIPT_FILE \"$WATCH_COMMAND\" \"$GREP_PARAM\" \"$HEALTHCHECK_ID\""
+JOB="$CRON_FREQ bash $PWD/$SCRIPT_FILE \"$WATCH_COMMAND\" \"$GREP_PARAM\" \"$HEALTHCHECK_ID\""
 
 (crontab -l 2>/dev/null; echo "$JOB") | crontab -
 
