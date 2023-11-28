@@ -4,7 +4,7 @@ read -p "Please enter the command to watch: " WATCH_COMMAND
 read -p "Please enter the grep parameter: " GREP_PARAM
 read -p "Please enter your healthcheck.io id: " HEALTHCHECK_ID
 
-GITHUB_URL='https://github.com/subscan-explorer/watch-logs-script/raw/master/validator-watch.sh'
+GITHUB_URL='https://raw.githubusercontent.com/subscan-explorer/watch-logs-script/master/validator-watch.sh'
 SCRIPT_FILE='validator-watch.sh'
 
 if [ ! -f $SCRIPT_FILE ]; then
