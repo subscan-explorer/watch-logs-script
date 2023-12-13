@@ -10,7 +10,6 @@ This repository contains a script designed to execute a user-designed command, f
 #### start.sh
 This script sets up a cron job to execute the validator_watch.sh regularly. Run it with the following steps:
 * In terminal, navigate to the directory containing start.sh.
-* Grant the script execute permissions: chmod +x start.sh.
 * Run the script: ./start.sh.
 * The script will ask for your cron frequency, the command to watch, the grep parameter, and your healthcheck.io id.
 #### validator_watch.sh
